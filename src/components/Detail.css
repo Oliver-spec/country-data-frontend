@@ -3,6 +3,13 @@
   margin-bottom: 70px;
 }
 
+@media only screen and (max-width: 510px) {
+  .whole-page {
+    margin-top: 100.2px;
+    margin-bottom: 70px;
+  }
+}
+
 .words-info {
   display: flex;
   flex-direction: row;

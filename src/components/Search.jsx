@@ -17,14 +17,6 @@ export default function Search({
             placeholder="Country name or code"
           />
         </div>
-        {/* <div className="find-countries-search">
-          <div>Find by country codes</div>
-          <input
-            type="text"
-            onChange={searchByCountryCode}
-            placeholder="Country code"
-          />
-        </div> */}
       </div>
     );
   } else {

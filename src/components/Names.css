@@ -3,6 +3,13 @@
   margin-bottom: 47.5px;
 }
 
+@media only screen and (max-width: 510px) {
+  .whole-names {
+    margin-top: 100.2px;
+    margin-bottom: 47.5px;
+  }
+}
+
 .country-info {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
