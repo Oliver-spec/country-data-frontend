@@ -1,5 +1,6 @@
 import Capitals from "./Capitals";
 import Continents from "./Continents";
+import "./BasicInfo.css";
 
 export default function BasicInfo({ country }) {
   let landlocked = "No";
@@ -8,20 +9,20 @@ export default function BasicInfo({ country }) {
   }
 
   return (
-    <>
-      <h1>{country.name.common}</h1>
+    <div>
+      <div className="country-name">{country.name.common}</div>
       <Capitals country={country} />
       <Continents country={country} />
-      <p>Sub-region: {country.subregion}</p>
-      <p>
+      <div>Sub-region: {country.subregion}</div>
+      <div>
         Area: {country.area.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
         km²
-      </p>
-      <p>
+      </div>
+      <div>
         Population:{" "}
         {country.population.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-      </p>
-      <p>Landlocked: {landlocked}</p>
-    </>
+      </div>
+      <div>Landlocked: {landlocked}</div>
+    </div>
   );
 }

@@ -20,15 +20,14 @@ export default function Map({ country }) {
     zoom = 13;
   }
   return (
-    <>
-      <h3>View on map:</h3>
-      <div style={{ height: "50vh", width: "45vh" }}>
+    <div className="map">
+      <div style={{ height: "50vh", width: "90vw" }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: API_KEY }}
           defaultCenter={center}
           defaultZoom={zoom}
         ></GoogleMapReact>
       </div>
-    </>
+    </div>
   );
 }

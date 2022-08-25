@@ -1,0 +1,46 @@
+.whole-names {
+  margin-top: 61px;
+  margin-bottom: 47.5px;
+}
+
+.country-info {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0px 3px 5px rgb(233, 227, 227);
+  display: flex;
+  flex-direction: column;
+}
+
+.country-info div {
+  padding: 10px;
+}
+
+.more-button {
+  width: 50px;
+  height: 25px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: bolder;
+  transition: 0.4s;
+  background-color: rgb(77, 77, 199);
+  border-radius: 8px;
+  border-width: 1px;
+  border-color: rgb(77, 77, 199);
+  border-style: solid;
+  color: white;
+  cursor: pointer;
+}
+
+.more-button:hover {
+  background-color: white;
+  color: rgb(77, 77, 199);
+  border-width: 1px;
+  border-color: rgb(77, 77, 199);
+}
+
+.county-name {
+  font-size: 25px;
+  font-weight: bolder;
+}

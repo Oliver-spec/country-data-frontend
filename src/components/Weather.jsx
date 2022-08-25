@@ -9,14 +9,16 @@ export default function Weather({ country }) {
   }
 
   // states
-  const [weather, setWeather] = useState({});
+  const [weather, setWeather] = useState(null);
 
   // effects
   useEffect(() => {
-    api.getWeather(capital[0]).then((response) => setWeather(response));
+    api.getWeather(capital[0]).then((response) => {
+      setWeather(response);
+    });
   }, [capital]);
 
-  if (Object.keys(weather).length === 0) {
+  if (!weather) {
     return (
       <div>
         <h1>Weather in {capital[0]}</h1>
@@ -27,14 +29,17 @@ export default function Weather({ country }) {
   } else {
     return (
       <div>
-        <h1>Weather in {capital[0]}</h1>
-        <p>Temperature {weather.main.temp}°C</p>
+        <div>Weather in {capital[0]}</div>
+        <div>Temperature {weather.main.temp}°C</div>
         <img
           src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
           alt={weather.weather[0].description}
         />
-        <p>{weather.weather[0].description}</p>
-        <p>Wind {weather.wind.speed} m/s</p>
+        <div>
+          {weather.weather[0].description[0].toUpperCase() +
+            weather.weather[0].description.substr(1)}
+        </div>
+        <div>Wind {weather.wind.speed} m/s</div>
       </div>
     );
   }

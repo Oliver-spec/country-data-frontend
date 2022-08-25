@@ -2,7 +2,7 @@ import "./Search.css";
 
 export default function Search({
   filterCountries,
-  searchByCountryCode,
+  // searchByCountryCode,
   countries,
   dialCodes,
 }) {
@@ -14,17 +14,17 @@ export default function Search({
           <input
             type="text"
             onChange={filterCountries}
-            placeholder="Any country"
+            placeholder="Country name or code"
           />
         </div>
-        <div className="find-countries-search">
+        {/* <div className="find-countries-search">
           <div>Find by country codes</div>
           <input
             type="text"
             onChange={searchByCountryCode}
             placeholder="Country code"
           />
-        </div>
+        </div> */}
       </div>
     );
   } else {

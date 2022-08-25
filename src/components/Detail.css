@@ -1,0 +1,45 @@
+.whole-page {
+  margin-top: 61px;
+  margin-bottom: 70px;
+}
+
+.words-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 2%;
+}
+
+.words-info > div {
+  min-width: 40vw;
+  flex: 1;
+  border-left: solid;
+  border-right: solid;
+  border-width: 2px;
+  border-color: rgb(236, 225, 225);
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.words-info > div {
+  margin: 3vh;
+}
+
+.words-info > div > div {
+  margin: 2vh;
+}
+
+.map {
+  width: 90vw;
+  /* border: solid; */
+  border-width: 1px;
+  border-color: black;
+  border-radius: 15px;
+}
+
+.flag-container {
+  display: flex;
+  justify-content: center;
+}
